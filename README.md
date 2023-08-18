@@ -17,10 +17,10 @@ C# + PostgreSQL
 
 
 (2)DB --> DB_ConnectionStringFromJSON, DB_ConnectionStringFromConsole
-  конструктор:
+конструктор
     virtual string GetConnectionString() - возвращает строку подключения. 
-Виртуальный чтобы переопределить его в клссах наследниках,
-сделав разную реализацию передачи строки подключения.
+    Виртуальный чтобы переопределить его в клссах наследниках,
+    сделав разную реализацию передачи строки подключения.
     void ConnectDB() - пробует подключиться к базе данных
 
     bool ExecuteRequestReturnSuccess(string sqlRequest) // for: create, alter, drop
@@ -41,3 +41,4 @@ C# + PostgreSQL
     string GetRandomFio (char startSymbol) - возврвщвет рандомное ФИО начинающееся с нужной буквы.
     string GetRandomGender() - возвращает один из 2х полов.
     string GetRandomDate() - возвращает случайную дату от _minYear до _maxYear.
+
