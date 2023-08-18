@@ -17,7 +17,8 @@ C# + PostgreSQL
 
 
 (2)DB --> DB_ConnectionStringFromJSON, DB_ConnectionStringFromConsole
-конструктор
+
+--конструктор
     virtual string GetConnectionString() - возвращает строку подключения. 
     Виртуальный чтобы переопределить его в клссах наследниках,
     сделав разную реализацию передачи строки подключения.
