@@ -18,7 +18,7 @@ C# + PostgreSQL
 
 (2)DB --> DB_ConnectionStringFromJSON, DB_ConnectionStringFromConsole
 
-конструктор
+    конструктор
     virtual string GetConnectionString() - возвращает строку подключения. 
     Виртуальный чтобы переопределить его в клссах наследниках,
     сделав разную реализацию передачи строки подключения.
@@ -27,7 +27,7 @@ C# + PostgreSQL
     bool ExecuteRequestReturnSuccess(string sqlRequest) // for: create, alter, drop
     DataTable ExecuteRequestReturnTable(string sqlRequest)   // for: select
     int ExecuteRequestReturnCount(string sqlRequest)   // for: insert, update, delete
---используются в зависимости от того, что возвращает sql запрос.
+    --используются в зависимости от того, что возвращает sql запрос.
 
     bool CreateTable() - Пункт 1
     bool AddNote(string fio, string dateOfBirth, string gender) - Пункт 2
